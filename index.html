@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <meta name="description" content="Simple drawing app" />
+    <meta name="keywords" content="Drawing, Javascript, css, html, project" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <main>
+        <div class="canvas-container flex-column">
+            <div class="tool-box flex-row">
+                    <button id="undoBtn" class="edit-btn disabled"><i class="fas fa-undo"></i></button>
+                    <button id="clearBtn" class="edit-btn disabled"><i class="fas fa-trash-alt"></i></button>
+                    <input type="color" id="colorPicker" class="edit-btn"/>
+                    <input type="range" max="100" min="1" value="10" id="fontController"/>
+                    <span id="fontSizeValue" class="font-size-value">10</span>
+                    <a href="" download="my_painting.png" class="edit-btn disabled " id="extractCanvas"><i class="fas fa-save"></i></a>
+            </div>
+            <canvas id="mainCanvas" height="500">
+                Your browser does not support the HTML canvas tag
+            </canvas>
+        </div>  
+    </main>
+    <!-- Scripts -->
+    <script defer src="script.js"></script>
+</body>
+</html>
